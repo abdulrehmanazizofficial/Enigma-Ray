@@ -1,6 +1,8 @@
 import { cookies } from "next/headers";
 import AgentCreateClient from "./AgentCreateClient";
 
+export const dynamic = 'force-dynamic';
+
 const BASE_URL = 'https://api.muapi.ai';
 
 async function fetchUserData(apiKey) {

@@ -1,6 +1,8 @@
 import { cookies } from "next/headers";
 import AgentChatClient from "./AgentChatClient";
 
+export const dynamic = 'force-dynamic';
+
 /**
  * Server component — fetches agentDetails from the /api/agents proxy
  * (which forwards to https://api.muapi.ai/agents/by-slug/{id})

@@ -1,6 +1,8 @@
 import { cookies } from "next/headers";
 import AgentChatClient from "../AgentChatClient";
 
+export const dynamic = 'force-dynamic';
+
 /**
  * Server component — fetches both agentDetails and initialHistory
  * from the /api/agents proxy using the muapi_key cookie, then renders
