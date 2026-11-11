@@ -66,7 +66,23 @@ export function Header(navigate) {
     leftPart.appendChild(menu);
 
     const rightPart = document.createElement('div');
-    rightPart.className = 'flex items-center gap-4';
+    rightPart.className = 'flex items-center gap-3';
+
+    // GitHub Star Button
+    const starBtn = document.createElement('a');
+    starBtn.href = 'https://github.com/abdulrehmanazizofficial/Enigma-Ray';
+    starBtn.target = '_blank';
+    starBtn.rel = 'noopener noreferrer';
+    starBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-purple-500/40 bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-cyan-500/10 hover:from-purple-500/25 hover:to-cyan-500/25 text-white/90 hover:text-white transition-all duration-200 group shadow-sm shadow-purple-500/20';
+    starBtn.title = 'Star Enigma Ray on GitHub';
+    starBtn.innerHTML = `
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400 group-hover:scale-110 transition-transform">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        <span class="text-[12px] font-bold tracking-tight">Star</span>
+        <span class="text-[11px] font-semibold px-1.5 py-0.2 rounded-full bg-white/10 text-white/80">★</span>
+    `;
+    rightPart.appendChild(starBtn);
 
     const settingsBtn = document.createElement('button');
     settingsBtn.className = 'flex items-center gap-2 px-3 py-1.5 rounded-md border border-white/10 bg-white/5 text-[13px] font-bold text-white/80 hover:text-white hover:bg-white/10 hover:border-white/20 transition-colors';

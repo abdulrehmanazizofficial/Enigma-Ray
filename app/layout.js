@@ -16,6 +16,18 @@ export const metadata = {
     shortcut: '/favicon.png',
     apple: '/icon.png',
   },
+  openGraph: {
+    title: 'Enigma Ray — Next-Gen AI Image, Video & Cinema Studio',
+    description: 'Create. Transform. Evolve. Generate AI images, cinematic videos, and talking avatars using 600+ models with zero restrictions.',
+    images: ['/banner.png'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Enigma Ray — Next-Gen AI Image & Video Studio',
+    description: 'Create. Transform. Evolve. 600+ models, 15+ creative studios.',
+    images: ['/banner.png'],
+  },
 };
 
 export default async function RootLayout({ children }) {

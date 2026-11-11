@@ -799,6 +799,23 @@ export default function StandaloneShell({ locale = 'en' }) {
 
           {/* Right: Actions */}
           <div className="flex-shrink-0 flex items-center gap-3">
+            {/* GitHub Star Button */}
+            <a
+              href="https://github.com/abdulrehmanazizofficial/Enigma-Ray"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-purple-500/40 bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-cyan-500/10 hover:from-purple-500/25 hover:to-cyan-500/25 text-white/90 hover:text-white transition-all duration-200 group shadow-sm shadow-purple-500/20 hover:shadow-purple-500/40"
+              title="Star Enigma Ray on GitHub"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-400 group-hover:scale-115 group-hover:rotate-12 transition-transform duration-200">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <span className="text-[12px] font-bold tracking-tight">Star</span>
+              <span className="text-[11px] font-semibold px-1.5 py-0.2 rounded-full bg-white/10 text-white/80 group-hover:bg-purple-500/20">
+                ★
+              </span>
+            </a>
+
             <div className="flex items-center gap-2.5 bg-white/5 px-3 py-1.5 rounded-full border border-white/5 transition-colors">
               <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
               <span className="text-xs font-bold text-white/90">
